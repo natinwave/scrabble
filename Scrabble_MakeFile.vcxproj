@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{190520F7-CA05-41A8-B16E-51EDB8471B14}</ProjectGuid>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Makefile</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeOutput>the_world</NMakeOutput>
+    <NMakeCleanCommandLine>make</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <NMakeBuildCommandLine>make</NMakeBuildCommandLine>
+    <NMakeOutput>./the_world</NMakeOutput>
+    <NMakeCleanCommandLine>make</NMakeCleanCommandLine>
+    <NMakeReBuildCommandLine>make</NMakeReBuildCommandLine>
+    <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\downloads\CharArr.cpp" />
+    <ClCompile Include="..\..\downloads\main.cpp" />
+    <ClCompile Include="..\..\downloads\Scrabble.cpp" />
+    <ClCompile Include="..\..\downloads\Trie.cpp" />
+    <ClCompile Include="CharArr.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="poss_Move.cpp" />
+    <ClCompile Include="Scrabble.cpp" />
+    <ClCompile Include="Trie.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\downloads\CharArr.h" />
+    <ClInclude Include="..\..\downloads\Scrabble.h" />
+    <ClInclude Include="..\..\downloads\Trie.h" />
+    <ClInclude Include="CharArr.h" />
+    <ClInclude Include="poss_Move.h" />
+    <ClInclude Include="Scrabble.h" />
+    <ClInclude Include="Trie.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\downloads\boardread.py" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\includes\web\html\bodytrail_cta.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\includes\web\html\doc_search.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_complete.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_complete_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_complete_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_complete_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_confirm.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_confirm_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_confirm_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_confirm_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_create_acct.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_create_acct_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_create_acct_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_create_acct_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_key.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_key_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_key_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_key_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_lic.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_lic_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_lic_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_lic_select.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_lic_select_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_lic_select_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_lic_select_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_lic_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_login.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_login_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_login_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_login_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_type.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_type_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_type_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\act_type_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\complete.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\complete_download.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\complete_download_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\complete_download_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\complete_download_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\complete_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\complete_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\complete_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\confirm-downloads.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\confirm-downloads_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\confirm-downloads_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\confirm-downloads_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\confirm.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\confirm_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\confirm_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\confirm_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\create_acct.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\create_acct_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\create_acct_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\create_acct_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\cust_options.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\cust_options_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\cust_options_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\cust_options_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\download_folder.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\download_folder_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\download_folder_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\download_folder_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\email_verification.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\email_verification_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\email_verification_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\email_verification_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\fik-desc.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\fik-desc_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\fik-desc_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\fik-desc_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\folder_select.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\folder_select_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\folder_select_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\folder_select_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\index.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\index_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\index_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\index_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\install_dwnld.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\install_dwnld_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\install_dwnld_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\install_dwnld_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\inst_info.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\inst_info_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\inst_info_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\inst_info_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_agree.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_agree_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_agree_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_agree_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_file_path.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_file_path_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_file_path_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_file_path_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_mgr_config.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_mgr_config_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_mgr_config_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_mgr_config_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_select.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_select_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_select_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\lic_select_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\mw_acct.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\mw_acct_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\mw_acct_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\mw_acct_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\named_user.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\named_user_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\named_user_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\named_user_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\next_steps.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\next_steps_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\next_steps_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\next_steps_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\prod_config_notes.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\prod_config_notes_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\prod_config_notes_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\prod_config_notes_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\prod_select.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\prod_select_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\prod_select_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\prod_select_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\retrieve_lic.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\retrieve_lic_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\retrieve_lic_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\retrieve_lic_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\snu_options.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\snu_options_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\snu_options_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\snu_options_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\start-installer.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\start-installer_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\start-installer_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\start-installer_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\user_name.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\user_name_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\user_name_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\user_name_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\welcome.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\welcome_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\welcome_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\welcome_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\welc_act.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\welc_act_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\welc_act_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\welc_act_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\_f0-55634.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\_f0-55634_ja_JP.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\_f0-55634_ko_KR.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\install\csh\_f0-55634_zh_CN.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\templates\3pblank.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\templates\3pdoc.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\templates\noexample.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\templates\searchbox.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\help\templates\searchresults.html" />
+    <None Include="..\..\downloads\r2015a-win64\r2015a-win64\sys\java\jre\win64\jre\Welcome.html" />
+    <None Include="..\..\downloads\reader.py" />
+    <None Include="..\..\downloads\scrabble.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\includes\web\html\bodytrail_cta.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\includes\web\html\doc_search.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_complete.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_complete_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_complete_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_complete_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_confirm.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_confirm_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_confirm_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_confirm_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_create_acct.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_create_acct_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_create_acct_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_create_acct_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_key.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_key_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_key_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_key_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_lic.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_lic_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_lic_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_lic_select.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_lic_select_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_lic_select_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_lic_select_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_lic_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_login.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_login_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_login_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_login_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_type.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_type_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_type_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\act_type_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\complete.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\complete_download.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\complete_download_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\complete_download_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\complete_download_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\complete_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\complete_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\complete_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\confirm-downloads.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\confirm-downloads_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\confirm-downloads_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\confirm-downloads_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\confirm.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\confirm_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\confirm_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\confirm_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\create_acct.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\create_acct_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\create_acct_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\create_acct_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\cust_options.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\cust_options_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\cust_options_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\cust_options_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\download_folder.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\download_folder_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\download_folder_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\download_folder_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\email_verification.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\email_verification_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\email_verification_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\email_verification_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\fik-desc.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\fik-desc_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\fik-desc_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\fik-desc_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\folder_select.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\folder_select_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\folder_select_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\folder_select_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\index.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\index_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\index_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\index_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\install_dwnld.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\install_dwnld_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\install_dwnld_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\install_dwnld_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\inst_info.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\inst_info_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\inst_info_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\inst_info_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_agree.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_agree_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_agree_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_agree_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_file_path.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_file_path_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_file_path_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_file_path_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_mgr_config.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_mgr_config_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_mgr_config_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_mgr_config_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_select.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_select_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_select_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\lic_select_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\mw_acct.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\mw_acct_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\mw_acct_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\mw_acct_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\named_user.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\named_user_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\named_user_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\named_user_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\next_steps.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\next_steps_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\next_steps_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\next_steps_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\prod_config_notes.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\prod_config_notes_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\prod_config_notes_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\prod_config_notes_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\prod_select.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\prod_select_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\prod_select_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\prod_select_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\retrieve_lic.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\retrieve_lic_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\retrieve_lic_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\retrieve_lic_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\snu_options.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\snu_options_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\snu_options_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\snu_options_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\start-installer.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\start-installer_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\start-installer_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\start-installer_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\user_name.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\user_name_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\user_name_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\user_name_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\welcome.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\welcome_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\welcome_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\welcome_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\welc_act.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\welc_act_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\welc_act_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\welc_act_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\_f0-55634.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\_f0-55634_ja_JP.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\_f0-55634_ko_KR.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\install\csh\_f0-55634_zh_CN.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\templates\3pblank.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\templates\3pdoc.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\templates\noexample.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\templates\searchbox.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\help\templates\searchresults.html" />
+    <None Include="..\..\downloads\_temp_matlab_r2015b_win64\sys\java\jre\win64\jre\Welcome.html" />
+    <None Include="reader.py" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
